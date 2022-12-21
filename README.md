@@ -1,2 +1,2 @@
-# mosaic_maker
+# artify
 Create a mosaic from your favourite albums
