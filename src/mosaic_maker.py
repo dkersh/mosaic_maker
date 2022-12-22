@@ -16,15 +16,6 @@ class Album:
     album: str
     artwork: Image = None
 
-    def __post_init__(self):
-        search_query = "%s %s" % (self.artist, self.album)
-        results = sp.search(q=search_query, type="album")
-        items = results["albums"]["items"]
-        url = items[0]["images"][0]["url"]
-        response = requests.get(url)
-        img = Image.open(BytesIO(response.content))
-        self.artwork = img
-
 
 class MosaicMaker:
     def __init__(
