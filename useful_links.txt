@@ -1,0 +1,6 @@
+https://github.com/src-d/lapjv
+https://github.com/vusd/smartgrid
+https://github.com/ohadf/isomatch
+https://github.com/kylemcdonald/CloudToGrid/blob/master/CloudToGrid.ipynb
+http://users.sussex.ac.uk/~nq28/kernelized_sorting.html
+https://github.com/pechyonkin/RasterFairy-Py3
