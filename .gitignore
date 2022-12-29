@@ -1,6 +1,0 @@
-.gitignore
-*.toml
-.cache
-__pycache__
-rob_list.csv
-*.ipynb
