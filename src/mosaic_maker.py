@@ -9,6 +9,7 @@ from PIL import Image
 from spotipy.oauth2 import SpotifyClientCredentials
 import cv2
 import PIL
+from sklearn.decomposition import PCA
 from sklearn.preprocessing import MinMaxScaler
 from sklearn.manifold import TSNE
 from scipy.spatial.distance import cdist
@@ -72,7 +73,7 @@ class MosaicMaker:
             album_list (str): path to csv file containing list of albums.
         """
         self.album_list = []
-        with open(album_list) as csvfile:
+        with open(album_list, encoding='utf-8') as csvfile:
             reader = csv.reader(csvfile, delimiter=",")
             for row in reader:
                 album = Album(row[0], row[1])
